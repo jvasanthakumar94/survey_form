@@ -1,0 +1,57 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" media="all" href="https://static.codepen.io/assets/global/global-a95b93667d4c3efaa9fd3204567225fd3a76cdefc4a42d44529a0d72d6a3928d.css">
+  <link rel="stylesheet" media="all" href="style.css">
+
+</head>
+<main id="main">
+  <header>
+    <h1 id="title">My Survey Form</h1>
+    <p id="description"><em>Thank you for taking the time to help us improve the platform</em></p>
+  </header>
+  <form id="survey-form">
+    <fieldset>
+      <legend>Survey form</legend>
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input id="name" type="text" class="form-control" placeholder="Enter your Name" required>
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input class="form-control" id="email" type="email" placeholder="Enter your Email" required>
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number">Experience</label>
+        <input class="form-control" id="number" type="number" min="1" max="40" placeholder="Enter your Experience" required>
+      </div>
+      <div class="form-group">
+        <label>Which option best describes your current role?</label>
+        <select id="dropdown" class="form-control" required>
+          <option disabled selected>Select current role</option>
+          <option value="Student">Student</option>
+          <option value="Professional">Professional</option>
+          <option value="others">others</option>
+        </select </div>
+        <div class="form-group">
+          <label> would you recommend FCC to your friend?</label></br>
+          <label for="yes"><input type="radio" id="yes" name="recommend" value="yes" checked>Yes</label></br>
+          <label for="no"><input type="radio" id="no" name="recommend" value="no">No</label></br>
+          <label for="other"><input type="radio" id="other" name="recommend" value="other">Others</label>
+        </div>
+        <div class="form-group">
+          <label> What languages would you like?</label></br>
+          <label for="yes"><input type="checkbox" id="yes" name="recommend" value="yes">Yes</label></br>
+          <label for="no"><input type="checkbox" id="no" name="recommend" value="no">No</label></br>
+          <label for="other"><input type="checkbox" id="other" name="recommend" value="other">Others</label>
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="suggestion">Suggestions</label>
+          <textarea class="form-control" id="suggestion" type="text" placeholder="Please provide additional comments" required></textarea>
+        </div>
+        <div class="form-group">
+          <button class="btns" type="submit" id="submit" value="submit">Submit</button></div>
+    </fieldset>
+  </form>
+</main>

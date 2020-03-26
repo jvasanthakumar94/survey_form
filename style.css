@@ -1,0 +1,22 @@
+#title {
+  text-align: center;
+}
+
+#survey-form {
+  width: 75%;
+}
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+.btns {
+  background-color: green;
+  width: 100%;
+  padding: 10px;
+}
+.btns:hover {
+  background-color: orange;
+}
